@@ -1,26 +1,163 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
+.nav-container{
+    background-color: rgb(1, 40, 56);
+    padding: 8px 20px;
     color: white;
-    background: black;
-  }
+    border: 2px solid rgb(220, 175, 239) ;
+    border-radius:2%;
+}
+.nav-brandName{
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: italic;   
+}
+.body-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 2%;
+}
+.side-container{
+    width: 20%;
+    background-color: white;
+   
+    padding: 0px 20px;
+}
+.center-container{
+    width: 59%;
+    background-color: white;
+    
+}
+.cards-heading{
+    color:rgb(66, 1, 40);
+    font-size: 1.8rem;
+    margin: 20px;
+    
+    font-weight: 900;
+}
+.cards-container{
+    box-shadow: 1px 1px 10px 1px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 20px;
+    border-radius: 2%;
+    margin-top: 20px;
+}
+
+.project-card-container{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin:30px 20px 20px 20px;
+    box-shadow: 13px 1px 12px 3px;
+    border-radius: 10px;
+    
+    
+}
+
+.project-card-title{
+
+}
+.circle-logo{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.project-card-title h1{
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 2px;
+
+}
+.project-card-body{ 
+    display: flex;
+    justify-content: baseline;  
+}
+.project-card-body div{
+    margin: 8px 8px;  
+}
+.project-card-empty-image{
+height: 170px;
+background-color: rgb(109, 13, 13);
+}
+.project-card-body-discription{
+text-align: center;
+padding:0px 20px;
+}
+.project-card-body-discription h1{
+    font-size: 1rem;
+    font-weight: 800;
+}
+.project-card-body-discription p{
+    font-size: 1rem;
+}
+.project-card-body-button{
+  
+}
+.project-card-body-button button{
+    background-color: rgb(166, 166, 236);
+    color: black;
+    padding: 16px;
+    margin-top: 16px;
+    font-size:medium;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+.project-card-body-button button:hover{
+    background-color: rgb(92, 92, 236);
+}
+
+/* left */
+.left-container{
+    background-color: white;
+}
+
+/* Skills card*/
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* list card*/
+.list-container{
+    margin-top: 20px;
+    background-color: white;
+    max-width: 100%;
+    box-shadow: 1px 1px 10px 1px;
+    padding: 20px;
+
+}
+.myHover:hover{
+    background-color: rgb(102, 143, 232);
+    color: white;
+    cursor: pointer;
+}
+.list-key{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: rgb(2, 44, 64);
+
+}
+.list-value{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(142, 60, 5);
+    margin-top: 8px;
+}
+.list-experience{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(142, 60, 5);
+    margin-top: 8px;
 }
